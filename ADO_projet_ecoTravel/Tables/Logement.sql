@@ -29,5 +29,5 @@
     CONSTRAINT [FK_Logement_ToTable_1] FOREIGN KEY ([IdClient]) REFERENCES [Client]([IdClient]), 
     CONSTRAINT [PK_Logement] PRIMARY KEY ([IdLogement]), 
     CONSTRAINT [CK_Logement_DescriptionCourte] CHECK (LEN()>=25),
-	CONSTRAINT [CK_Logement_DescriptionLongue] CHECK (LEN()>=250),
+	CONSTRAINT [CK_Logement_DescriptionLongue] CHECK (LEN()>=250), 
 )
