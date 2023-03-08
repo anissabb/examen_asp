@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projet_ecoTravel", "projet_ecoTravel\projet_ecoTravel.csproj", "{515DDB06-C358-4968-9D1E-0E7CB249211E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ADO_projet_ecoTravel", "ADO_projet_ecoTravel\ADO_projet_ecoTravel.sqlproj", "{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{515DDB06-C358-4968-9D1E-0E7CB249211E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515DDB06-C358-4968-9D1E-0E7CB249211E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515DDB06-C358-4968-9D1E-0E7CB249211E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515DDB06-C358-4968-9D1E-0E7CB249211E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4817D31F-F931-4DB0-9D31-70D8B257203D}
+	EndGlobalSection
+EndGlobal
