@@ -1,10 +1,5 @@
 CREATE PROCEDURE [dbo].[PS_ReservationClient]
 
-@PasEnCours int=0,
-@EnCours int=1
+@IdClient int 
 
-AS
-
-	SELECT @PasEnCours, @EnCours
-
-Return 0
+AS SELECT 

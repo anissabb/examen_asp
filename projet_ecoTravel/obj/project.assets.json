@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\projet_ecoTravel\\projet_ecoTravel.csproj",
-      "projectName": "projet_ecoTravel",
-      "projectPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\projet_ecoTravel\\projet_ecoTravel.csproj",
+      "projectUniqueName": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\projet_ecoTravel\\MVC.csproj",
+      "projectName": "MVC",
+      "projectPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\projet_ecoTravel\\MVC.csproj",
       "packagesPath": "C:\\Users\\a.bojabah\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\projet_ecoTravel\\obj\\",
       "projectStyle": "PackageReference",

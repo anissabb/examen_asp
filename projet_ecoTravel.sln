@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projet_ecoTravel", "projet_ecoTravel\projet_ecoTravel.csproj", "{515DDB06-C358-4968-9D1E-0E7CB249211E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "projet_ecoTravel\MVC.csproj", "{515DDB06-C358-4968-9D1E-0E7CB249211E}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ADO_projet_ecoTravel", "ADO_projet_ecoTravel\ADO_projet_ecoTravel.sqlproj", "{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{C804A415-1988-4F68-ABA3-6D09D7A43590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{BB05391C-B5F8-46E1-BD50-8211136DA1BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5F43AA14-0B39-4599-871E-6BB14D2C6C98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,18 @@ Global
 		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDF67AB0-98A7-4D1E-87CB-7136247D6A01}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C804A415-1988-4F68-ABA3-6D09D7A43590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C804A415-1988-4F68-ABA3-6D09D7A43590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C804A415-1988-4F68-ABA3-6D09D7A43590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C804A415-1988-4F68-ABA3-6D09D7A43590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB05391C-B5F8-46E1-BD50-8211136DA1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB05391C-B5F8-46E1-BD50-8211136DA1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB05391C-B5F8-46E1-BD50-8211136DA1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB05391C-B5F8-46E1-BD50-8211136DA1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F43AA14-0B39-4599-871E-6BB14D2C6C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F43AA14-0B39-4599-871E-6BB14D2C6C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F43AA14-0B39-4599-871E-6BB14D2C6C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F43AA14-0B39-4599-871E-6BB14D2C6C98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

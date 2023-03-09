@@ -1,8 +1,9 @@
 ﻿CREATE VIEW [dbo].[V_Reservation]
-	AS SELECT [idReservation],
+	AS SELECT [IdReservationLogement],
 				[DateDebut],	
 				[DateFin],
-				Logement.[Pays]
+				Logement.[adressePays]
 
-	FROM[Reservation] AS reservation  JOIN [Logement] as Logement ON reservation.[IdLogement]=Logement.[IdLogement]
+	FROM [ReservationLogement] AS reservation  JOIN [Logement] AS Logement ON reservation.[IdLogement]=Logement.[IdLogement]
+	
 

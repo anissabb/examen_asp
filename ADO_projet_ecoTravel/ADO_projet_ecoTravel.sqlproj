@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Vues" />
+    <Folder Include="Procedures stockées" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Client.sql" />
@@ -70,5 +71,13 @@
     <Build Include="Tables\Annuler.sql" />
     <Build Include="Vues\V_Reservation.sql" />
     <Build Include="Tables\Images.sql" />
+    <Build Include="Procedures stockées\PS_Client.sql" />
+    <Build Include="Procedures stockées\PS_LogementDispo.sql" />
+    <Build Include="Procedures stockées\PS_LogementMois.sql" />
+    <Build Include="Procedures stockées\ReservationClient.sql" />
+    <Build Include="Vues\V_LogementNotes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="ADO_projet_ecoTravel.refactorlog" />
   </ItemGroup>
 </Project>
