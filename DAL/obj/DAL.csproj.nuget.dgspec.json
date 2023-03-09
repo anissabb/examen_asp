@@ -4,14 +4,14 @@
     "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj": {
+    "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj",
-        "projectName": "DAL",
-        "projectPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\a.bojabah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.bojabah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,7 +39,69 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\a.bojabah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\a.bojabah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\a.bojabah\\Documents\\projet_ecoTravel\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"

@@ -8,5 +8,6 @@ namespace Common.Repositories
 {
     public interface IInsertRepository<TEntity,TId>
     {
+        TId Insert(TEntity entity);
     }
 }

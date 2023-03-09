@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[LogementNotes] (View)
+       [dbo].[V_Reservation] (View)
+       [dbo].[PS_Client] (Procedure)
+       [dbo].[PS_LogementDispo] (Procedure)
+       [dbo].[PS_LogementMois] (Procedure)
+
+** Supporting actions

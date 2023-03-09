@@ -1,8 +1,6 @@
-CREATE VIEW [dbo].[V_LogementNotes]
-
-AS SELECT Logement.*
+CREATE VIEW [dbo].[LogementNotes]
+AS SELECT DISTINCT Logement.*
 FROM [Logement] AS Logement
 JOIN [Avis] AS Avis
 ON Logement.[idLogement] = Avis.[idLogement]
-GROUP BY Logement.[idLogement]
-Having AVG(Avis.[note])>(SELECT AVG([note]) FROM [Avis]);
+WHERE (SELECT AVG([note]) FROM Avis WHERE Avis.idLogement = Logement.IdLogement)>(SELECT AVG([note]) FROM [Avis]);

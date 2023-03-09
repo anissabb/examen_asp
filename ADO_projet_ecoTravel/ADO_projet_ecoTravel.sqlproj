@@ -80,4 +80,10 @@
   <ItemGroup>
     <RefactorLog Include="ADO_projet_ecoTravel.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ADO_projet_ecoTravel.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
 </Project>

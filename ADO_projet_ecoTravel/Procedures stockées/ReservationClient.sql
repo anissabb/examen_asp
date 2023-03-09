@@ -1,5 +1,5 @@
-CREATE PROCEDURE [dbo].[PS_ReservationClient]
+--CREATE PROCEDURE [dbo].[PS_ReservationClient]
 
-@IdClient int 
+--@IdClient int 
 
-AS SELECT 
+--AS SELECT 

@@ -8,6 +8,7 @@ namespace Common.Repositories
 {
     public interface IGetRepository<TEntity,TId>
     {
-
+        IEnumerable<TEntity> Get();
+        TEntity Get(TId id);
     }
 }
