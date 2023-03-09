@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Services
 {
-    public class ClientService
+    public class ClientService:IClientRepository<Client,int>
     {
         
 
@@ -23,7 +23,10 @@ namespace BLL.Services
         {
             return _repository.Get().Select(e=>e.ToBLL());
         }
-
+        public int?CheckPassword(string AdresseMail,string MotdePasse)
+        {
+            return _repository.CheckPassword(AdresseMail, MotdePasse);
+        }
         public Client Get(int id)
         {
             return _repository.Get(id).ToBLL();

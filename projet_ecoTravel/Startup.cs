@@ -1,3 +1,9 @@
+using BLLObject= BLL.Entities;
+using DALObject = DAL.Entities;
+using BLLServ = BLL.Services;
+using DALServ = DAL.Services;
+
+using Common.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace projet_ecoTravel
 {
@@ -23,6 +30,8 @@ namespace projet_ecoTravel
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IClientRepository<BLLObject.Client,int>, BLLServ.ClientService>();
+            services.AddScoped<IClientRepository<DALObject.Client, int>, DALServ.ClientService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

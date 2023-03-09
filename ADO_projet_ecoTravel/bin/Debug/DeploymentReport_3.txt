@@ -1,0 +1,56 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Annuler] (Table)
+       [dbo].[Avis] (Table)
+       [dbo].[Client] (Table)
+       [dbo].[Images] (Table)
+       [dbo].[Indisponibilite] (Table)
+       [dbo].[Logement] (Table)
+       [dbo].[Proprietaire] (Table)
+       [dbo].[ReservationLogement] (Table)
+       [dbo].[TypeLogement] (Table)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Logement] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Logement] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Logement] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Logement] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[ReservationLogement] (Contrainte par défaut)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[ReservationLogement] (Contrainte par défaut)
+       [dbo].[FK_Annuler_ReservationLogement] (Clé étrangère)
+       [dbo].[FK_Annuler_Client] (Clé étrangère)
+       [dbo].[FK_Avis_ReservationLogement] (Clé étrangère)
+       [dbo].[FK_Avis_Logement] (Clé étrangère)
+       [dbo].[FK_Images_ToTable] (Clé étrangère)
+       [dbo].[FK_Indisponibilité_Logement] (Clé étrangère)
+       [dbo].[FK_Logement_ToTable] (Clé étrangère)
+       [dbo].[FK_Logement_ToTable_1] (Clé étrangère)
+       [dbo].[FK_Proprietaire_ToTable] (Clé étrangère)
+       [dbo].[FK_ReservationLogement_Indisponibilite] (Clé étrangère)
+       [dbo].[FK_ReservationLogement_Logement] (Clé étrangère)
+       [dbo].[FK_ReservationLogement_Client] (Clé étrangère)
+       [dbo].[CK_Avis_Notes] (Contrainte de validation)
+       [dbo].[CK_Client_nom] (Contrainte de validation)
+       [dbo].[CK_Client_prenom] (Contrainte de validation)
+       [dbo].[CK_Client_email] (Contrainte de validation)
+       [dbo].[CK_Client_telephone] (Contrainte de validation)
+       [dbo].[CK_Images_Images] (Contrainte de validation)
+       [dbo].[CK_Logement_DescriptionCourte] (Contrainte de validation)
+       [dbo].[CK_Logement_DescriptionLongue] (Contrainte de validation)
+       [dbo].[CK_ReservationLogement_DateDebut] (Contrainte de validation)
+       [dbo].[CK_ReservationLogement_DateFin] (Contrainte de validation)
+       [dbo].[LogementNotes] (Vue)
+       [dbo].[V_Reservation] (Vue)
+       [dbo].[PS_Client] (Procédure)
+       [dbo].[PS_LogementDispo] (Procédure)
+       [dbo].[PS_LogementMois] (Procédure)
+
+** Actions de support

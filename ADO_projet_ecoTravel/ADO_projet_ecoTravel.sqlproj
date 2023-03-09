@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ADO_projet_ecoTravel.publish.xml" />
+    <None Include="ADO_projet_ecoTravel_1.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

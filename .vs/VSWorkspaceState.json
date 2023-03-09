@@ -1,10 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ADO_projet_ecoTravel",
-    "\\ADO_projet_ecoTravel\\Procedures stockées",
-    "\\ADO_projet_ecoTravel\\Tables",
-    "\\ADO_projet_ecoTravel\\Vues"
+    "\\BLL",
+    "\\BLL\\Mappers",
+    "\\BLL\\Services",
+    "\\Common",
+    "\\DAL",
+    "\\DAL\\Entities",
+    "\\DAL\\Mappers",
+    "\\DAL\\Services",
+    "\\projet_ecoTravel"
   ],
   "SelectedNode": "\\projet_ecoTravel.sln",
   "PreviewInSolutionExplorer": false

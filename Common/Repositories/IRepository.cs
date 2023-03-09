@@ -7,13 +7,19 @@ using System.Threading.Tasks;
 
 namespace Common.Repository
 {
-   public interface IRepository<TEntity,TId>:
+   public interface IRepository<TEntity,TId>
     
-        IGetRepository<TEntity,TId>,
-        IInsertRepository<TEntity,TId>,
-        IUpdateRepository<TEntity,TId>,
-        IDeleteRepository<TEntity,TId>
+        
 
 
-    {}
+    {
+        IEnumerable<TEntity> Get();
+        TEntity Get(TId id);
+
+        TId Insert(TEntity entity);
+
+        bool Update(TId id, TEntity entity);
+
+        bool Delete(TId id);
+    }
 }

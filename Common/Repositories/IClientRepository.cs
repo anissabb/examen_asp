@@ -12,6 +12,6 @@ namespace Common.Repositories
         IRepository<TEntity,TId> where TEntity: IClient
     {
         int? CheckPassword(string AdresseMail, string MotdePasse);
-       
+        
     }
 }

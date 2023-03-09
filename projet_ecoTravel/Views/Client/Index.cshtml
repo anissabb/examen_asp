@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MVC.Models.ClientViewModel.ClientListItem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdClient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdresseMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotdePasse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.adressePays)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdresseMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotdePasse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.adressePays)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.IdClient }) |
+                @Html.ActionLink("Details", "Details", new { id=item.IdClient}) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.IdClient })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
