@@ -14,20 +14,23 @@ namespace MVC.Models.ClientViewModel
         [DisplayName("Nom:")]
         public string Nom { get; set; }
 
-        [DisplayName("Préom:")]
+        [DisplayName("Prénom:")]
         public string Prenom { get; set; }
 
-        [DisplayName("Préom:")]
+        [DisplayName("Adresse mail:")]
         public string AdresseMail { get; set; }
 
 
         [DisplayName("Télephone:")]
-        public int Telephone { get; set; }
+        public string Telephone { get; set; }
    
 
         [DisplayName("Pays:")]
-        public string adressePays { get; set; }
-       
+        public string Pays { get; set; }
+
+        [DisplayName("Mot de passe: ")]
+        public string   MotdePasse { get; set; }
+
 
 
     }

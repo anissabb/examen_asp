@@ -13,3 +13,8 @@ C:\Users\wille\OneDrive\Bureau\examen_asp\ADO_projet_ecoTravel\obj\Debug\postdep
 C:\Users\wille\OneDrive\Bureau\examen_asp\ADO_projet_ecoTravel\obj\Debug\predeploy.sql
 C:\Users\wille\OneDrive\Bureau\examen_asp\ADO_projet_ecoTravel\obj\Debug\ADO_projet_ecoTravel.dll
 C:\Users\wille\OneDrive\Bureau\examen_asp\ADO_projet_ecoTravel\obj\Debug\ADO_projet_ecoTravel.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\ADO_projet_ecoTravel\obj\Debug\ADO_projet_ecoTravel.sqlproj.AssemblyReference.cache
+C:\Users\a.bojabah\Documents\projet_ecoTravel\ADO_projet_ecoTravel\obj\Debug\Model.xml
+C:\Users\a.bojabah\Documents\projet_ecoTravel\ADO_projet_ecoTravel\obj\Debug\refactor.xml
+C:\Users\a.bojabah\Documents\projet_ecoTravel\ADO_projet_ecoTravel\obj\Debug\postdeploy.sql
+C:\Users\a.bojabah\Documents\projet_ecoTravel\ADO_projet_ecoTravel\obj\Debug\predeploy.sql

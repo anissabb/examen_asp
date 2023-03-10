@@ -5,7 +5,7 @@
 	[Prenom] NVARCHAR(50) NOT NULL,
 	[AdresseMail] NVARCHAR(250) NOT NULL UNIQUE,
 	[Pays] NVARCHAR(50) NOT NULL,
-	[Telephone] INT NOT NULL, 
+	[Telephone] NVARCHAR(15) NOT NULL, 
 	[MotdePasse] VARBINARY(64) NOT NULL,
     CONSTRAINT [PK_Client] PRIMARY KEY ([IdClient]),
     CONSTRAINT [CK_Client_nom] CHECK (LEN ([nom]) >= 1 ),

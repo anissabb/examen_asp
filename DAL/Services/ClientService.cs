@@ -59,7 +59,7 @@ namespace DAL.Services
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
-                    command.CommandText = "SELECT [IdClient], [Nom], [Prenom], [AdresseMail], [Pays] FROM [Client] WHERE [IdClient] = @id";
+                    command.CommandText = "SELECT [IdClient], [Nom], [Prenom], [Telephone],[AdresseMail], [Pays] FROM [Client] WHERE [IdClient] = @id";
                     command.Parameters.AddWithValue("id", id);
                     connection.Open();
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -82,13 +82,14 @@ namespace DAL.Services
                     /*command.CommandText = @"INSERT INTO [Client] ([nom], [prenom], [email], [pass], [adresse])
                                             OUTPUT [inserted].[idClient]
                                             VALUES (@nom, @prenom, @email, HASHBYTES('SHA2_512',@pass), @adresse)";*/
-                    command.CommandText = "SP_ClientAdd";
+                    command.CommandText = "PS_Client";
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("Nom", entity.Nom);
                     command.Parameters.AddWithValue("Prenom", entity.Prenom);
                     command.Parameters.AddWithValue("AdresseMail", entity.AdresseMail);
                     command.Parameters.AddWithValue("MotdePasse", entity.MotdePasse);
-                    command.Parameters.AddWithValue("Pays", (object)entity.Pays ?? DBNull.Value);
+                    command.Parameters.AddWithValue("Telephone", entity.Telephone);
+                    command.Parameters.AddWithValue("Pays", entity.Pays);
                     connection.Open();
                     return (int)command.ExecuteScalar();
                 }

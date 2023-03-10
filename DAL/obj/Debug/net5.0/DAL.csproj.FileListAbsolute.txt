@@ -18,3 +18,13 @@ C:\Users\wille\OneDrive\Bureau\examen_asp\DAL\obj\Debug\net5.0\DAL.csproj.CopyCo
 C:\Users\wille\OneDrive\Bureau\examen_asp\DAL\obj\Debug\net5.0\DAL.dll
 C:\Users\wille\OneDrive\Bureau\examen_asp\DAL\obj\Debug\net5.0\ref\DAL.dll
 C:\Users\wille\OneDrive\Bureau\examen_asp\DAL\obj\Debug\net5.0\DAL.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\bin\Debug\net5.0\DAL.deps.json
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\bin\Debug\net5.0\DAL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\bin\Debug\net5.0\ref\DAL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\bin\Debug\net5.0\DAL.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\bin\Debug\net5.0\Common.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\bin\Debug\net5.0\Common.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\obj\Debug\net5.0\DAL.csproj.CopyComplete
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\obj\Debug\net5.0\DAL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\obj\Debug\net5.0\ref\DAL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\DAL\obj\Debug\net5.0\DAL.pdb

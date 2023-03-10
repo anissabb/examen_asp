@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class Logement
+    public class Logement:ILogement
     {
         public int IdLogement { get; set; }
         public string NomLogement { get; set; }

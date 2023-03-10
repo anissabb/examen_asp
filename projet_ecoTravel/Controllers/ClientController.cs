@@ -31,7 +31,13 @@ namespace MVC.Controllers
         // GET: ClientController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            ClientDetails model = _services.Get(id).ToDetails();
+            if(model is null)
+            {
+                TempData["Error"] = "Client inexistant";
+                return RedirectToAction("Index");
+            }
+            return View(model);
         }
 
         // GET: ClientController/Create

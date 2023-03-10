@@ -9,7 +9,7 @@ namespace MVC.Models.ClientModelView
 {
     public class ClientCreateForm
     {
-
+        [ScaffoldColumn(false)]
         public int IdClient { get; set; }
         [Required]
         [MinLength(1)]
@@ -51,10 +51,9 @@ namespace MVC.Models.ClientModelView
         public string confirmpass { get; set; }
 
        [Required]
-       [MaxLength(50)]
-       [MinLength(2)]
        [DataType(DataType.PhoneNumber)]
-
-        public int Telephone { get; set; }
+       [MaxLength(15)]
+       [MinLength(2)]
+        public string Telephone { get; set; }
     }
 }

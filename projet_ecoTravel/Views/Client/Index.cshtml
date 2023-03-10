@@ -28,7 +28,10 @@
                 @Html.DisplayNameFor(model => model.MotdePasse)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.adressePays)
+                @Html.DisplayNameFor(model => model.Telephone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pays)
             </th>
             <th></th>
         </tr>
@@ -52,12 +55,15 @@
                 @Html.DisplayFor(modelItem => item.MotdePasse)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.adressePays)
+                @Html.DisplayFor(modelItem => item.Telephone)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.IdClient }) |
-                @Html.ActionLink("Details", "Details", new { id=item.IdClient}) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.IdClient })
+                @Html.DisplayFor(modelItem => item.Pays)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.IdClient }) |
+                @Html.ActionLink("Details", "Details", new { id = item.IdClient }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.IdClient })
             </td>
         </tr>
 }

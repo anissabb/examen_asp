@@ -20,3 +20,15 @@ C:\Users\wille\OneDrive\Bureau\examen_asp\BLL\obj\Debug\net5.0\BLL.csproj.CopyCo
 C:\Users\wille\OneDrive\Bureau\examen_asp\BLL\obj\Debug\net5.0\BLL.dll
 C:\Users\wille\OneDrive\Bureau\examen_asp\BLL\obj\Debug\net5.0\ref\BLL.dll
 C:\Users\wille\OneDrive\Bureau\examen_asp\BLL\obj\Debug\net5.0\BLL.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\BLL.deps.json
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\BLL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\ref\BLL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\BLL.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\Common.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\DAL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\Common.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\bin\Debug\net5.0\DAL.pdb
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\obj\Debug\net5.0\BLL.csproj.CopyComplete
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\obj\Debug\net5.0\BLL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\obj\Debug\net5.0\ref\BLL.dll
+C:\Users\a.bojabah\Documents\projet_ecoTravel\BLL\obj\Debug\net5.0\BLL.pdb

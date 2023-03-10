@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="ADO_projet_ecoTravel.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\WILLE\ONEDRIVE\BUREAU\EXAMEN_ASP\ADO_PROJET_ECOTRAVEL\OBJ\DEBUG\ADO_PROJET_ECOTRAVEL.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\A.BOJABAH\DOCUMENTS\PROJET_ECOTRAVEL\ADO_PROJET_ECOTRAVEL\OBJ\DEBUG\ADO_PROJET_ECOTRAVEL.DLL" />
 			<Metadata Name="AssemblyName" Value="ADO_projet_ecoTravel" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\wille\OneDrive\Bureau\examen_asp\ADO_projet_ecoTravel\obj\Debug\ADO_projet_ecoTravel.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\a.bojabah\Documents\projet_ecoTravel\ADO_projet_ecoTravel\obj\Debug\ADO_projet_ecoTravel.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -633,9 +633,10 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="15" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -1980,9 +1981,9 @@ WHERE (SELECT AVG([note]) FROM Avis WHERE Avis.idLogement = Logement.IdLogement)
 		<Element Type="SqlProcedure" Name="[dbo].[PS_Client]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
-	INSERT INTO [Client] ([AdresseMail], [MotdePasse], [Nom], [Prenom], [Pays], [telephone])
-	OUTPUT [inserted].[idClient]
-	VALUES (@AdresseMail, HASHBYTES('SHA_512', @MotdePasse), @Nom, @Prenom, @Pays, @telephone)]]></Value>
+	INSERT INTO [Client] ([AdresseMail], [MotdePasse], [Nom], [Prenom], [Pays], [Telephone])
+	OUTPUT [inserted].[IdClient]
+	VALUES (@AdresseMail, HASHBYTES('SHA2_512', @MotdePasse), @Nom, @Prenom, @Pays, @telephone)]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
@@ -2115,7 +2116,7 @@ WHERE (SELECT AVG([note]) FROM Avis WHERE Avis.idLogement = Logement.IdLogement)
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="15" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -2133,10 +2134,10 @@ WHERE (SELECT AVG([note]) FROM Avis WHERE Avis.idLogement = Logement.IdLogement)
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="404" />
+				<Property Name="Length" Value="405" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[PS_Client]&#xD;&#xA;&#x9;@AdresseMail NVARCHAR(250),&#xD;&#xA;&#x9;@MotdePasse NVARCHAR(50),&#xD;&#xA;&#x9;@Nom NVARCHAR(50),&#xD;&#xA;&#x9;@prenom NVARCHAR(50),&#xD;&#xA;&#x9;@pays NVARCHAR(50),&#xD;&#xA;&#x9;@telephone NVARCHAR(50)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[PS_Client]&#xD;&#xA;&#x9;@AdresseMail NVARCHAR(250),&#xD;&#xA;&#x9;@MotdePasse NVARCHAR(50),&#xD;&#xA;&#x9;@Nom NVARCHAR(50),&#xD;&#xA;&#x9;@prenom NVARCHAR(50),&#xD;&#xA;&#x9;@pays NVARCHAR(50),&#xD;&#xA;&#x9;@telephone NVARCHAR(15)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[PS_LogementDispo]">

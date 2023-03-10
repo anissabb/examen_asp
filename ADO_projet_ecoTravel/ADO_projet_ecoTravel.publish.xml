@@ -6,5 +6,7 @@
     <DeployScriptFileName>ADO_projet_ecoTravel.sql</DeployScriptFileName>
     <ProfileVersionNumber>1</ProfileVersionNumber>
     <TargetConnectionString>Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <CreateNewDatabase>True</CreateNewDatabase>
   </PropertyGroup>
 </Project>

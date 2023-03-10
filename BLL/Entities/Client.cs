@@ -16,7 +16,7 @@ namespace BLL.Entities
         public string Pays { get; set; }
 
         public string MotdePasse { get; set; }
-        public int Telephone { get; set; }
+        public string Telephone { get; set; }
 
 
     }
