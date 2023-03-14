@@ -29,14 +29,15 @@ namespace projet_ecoTravel
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
 
-            services.AddSession(options => {
-                options.Cookie.Name = "EcoTravel";
-                options.Cookie.HttpOnly = true;
-                options.Cookie.IsEssential = true;
-                options.IdleTimeout = TimeSpan.FromMinutes(50);
-            });
-            services.AddSession();
+            //services.AddSession(options => {
+            //    options.Cookie.Name = "EcoTravel";
+            //    options.Cookie.HttpOnly = true;
+            //    options.Cookie.IsEssential = true;
+            //    options.IdleTimeout = TimeSpan.FromMinutes(50);
+            //});
+            //services.AddSession();
             services.AddScoped<IClientRepository<BLLObject.Client,int>, BLLServ.ClientService>();
             services.AddScoped<IClientRepository<DALObject.Client, int>, DALServ.ClientService>();
             services.AddScoped<ILogementRepository<BLLObject.Logement, int>, BLLServ.LogementService>();
@@ -55,7 +56,7 @@ namespace projet_ecoTravel
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseSession();
+            //app.UseSession();
             app.UseStaticFiles();
 
             app.UseRouting();

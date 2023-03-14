@@ -21,7 +21,7 @@ namespace DAL.Services
             {
                 using (SqlCommand command = connection.CreateCommand())
                 {
-                    command.CommandText = "SELECT [IdLogement] , [NomLogement], [adresseRue],[adresseNumero] ,[adresseCodePostal],[adressePays]  ,[DescriptionCourte],[DescriptionLongue] ,[DateCreation], [NombrePieces],[PrixNuit] ,[Capacite], [SalleBain] ,[Wc],	[Balcon],[AirConditionne],[Wifi],[MiniBar], [AnimauxAdmis], [Piscine], [RoomService],[Lattitude], [Longitude],[IdProprietaire]  ,[IdTypeLogement] FROM[Logement]";
+                    command.CommandText = "SELECT [IdLogement] , [NomLogement], [adresseRue],[adresseNumero] ,[adresseCodePostal],[adressePays]  ,[DescriptionCourte],[DescriptionLongue] ,[DateCreation], [NombrePieces],[PrixNuit] ,[Capacite], [SalleBain] ,[Wc],	[Balcon],[AirConditionne],[Wifi],[MiniBar], [AnimauxAdmis], [Piscine], [RoomService],[Lattitude], [Longitude],[IdProprietaire] FROM[Logement]";
                     connection.Open();
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -61,11 +61,10 @@ namespace DAL.Services
                 using (SqlCommand command = connection.CreateCommand())
                 {
                                     
-                    command.CommandText = @"INSERT INTO [Logement] ([IdLogement] , [NomLogement], [adresseRue],[adresseNumero] ,[adresseCodePostal],[adressePays]  ,[DescriptionCourte],[DescriptionLongue] ,[DateCreation], [NombrePieces],[PrixNuit] ,[Capacite], [SalleBain] ,[Wc],	[Balcon],[AirConditionne],[Wifi],[MiniBar], [AnimauxAdmis], [Piscine], [RoomService],[Lattitude], [Longitude],[IdTypeLogement],[IdProprietaire]) 
+                    command.CommandText = @"INSERT INTO [Logement] ( [NomLogement], [adresseRue],[adresseNumero] ,[adresseCodePostal],[adressePays]  ,[DescriptionCourte],[DescriptionLongue] ,[DateCreation], [NombrePieces],[PrixNuit] ,[Capacite], [SalleBain] ,[Wc],	[Balcon],[AirConditionne],[Wifi],[MiniBar], [AnimauxAdmis], [Piscine], [RoomService],[Lattitude], [Longitude],[IdProprietaire]) 
                       OUTPUT [inserted].[IdLogement]  
-                            VALUES(@IdLogement,@NomLogement,@adresseRue,@adresseNumero,@adresseCodePostal,@adressePays,@DescriptionCourte,@DescriptionLongue,@DateCreation,@NombrePieces,@PrixNuit,@Capacite,@salleBain,@Wc,@Balcon,@AirConditionne,@MiniBar,@AnimauxAdmis,@Piscine,@RoomService,@Lattitude,@Longitude,@IdTypeLogement,
-@IdProprietaire)";
-                    command.Parameters.AddWithValue("IdLogement", entity.NomLogement);
+                            VALUES(@NomLogement,@adresseRue,@adresseNumero,@adresseCodePostal,@adressePays,@DescriptionCourte,@DescriptionLongue,@DateCreation,@NombrePieces,@PrixNuit,@Capacite,@salleBain,@Wc,@Balcon,@AirConditionne,@Wifi,@MiniBar,@AnimauxAdmis,@Piscine,@RoomService,@Lattitude,@Longitude,@IdProprietaire)";
+                    
                     command.Parameters.AddWithValue("NomLogement", entity.NomLogement);
                     command.Parameters.AddWithValue("adresseRue", entity.adresseRue);
                     command.Parameters.AddWithValue("adresseNumero", entity.adresseNumero);
@@ -88,8 +87,8 @@ namespace DAL.Services
                     command.Parameters.AddWithValue("RoomService", entity.RoomService);
                     command.Parameters.AddWithValue("Longitude", entity.Longitude);
                     command.Parameters.AddWithValue("Lattitude", entity.Lattitude);
-                    command.Parameters.AddWithValue("IdTypeLogement", entity.IdTypeLogement);
                     command.Parameters.AddWithValue("IdProprietaire", entity.IdProprietaire);
+
                     connection.Open();
                     return (int)command.ExecuteScalar();
                 }

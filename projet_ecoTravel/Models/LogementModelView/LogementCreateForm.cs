@@ -80,12 +80,14 @@ namespace MVC.Models.LogementModelView
         [DisplayName("Room Service")]
         public bool RoomService { get; set; }
         [Required]
-       //mettre range 
+        [Range(-180, 180, ErrorMessage = "Entre -180 et 180")]
+        //mettre range 
         [DisplayName("Lattitude")]
         
         public decimal Lattitude { get; set; }
         [Required]
-       //mettre range
+        [Range(-180, 180, ErrorMessage = "Entre -180 et 180")]
+        //mettre range
         [DisplayName("Longitude")]
         public decimal Longitude { get; set; }
     }
